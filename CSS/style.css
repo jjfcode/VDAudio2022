@@ -1,11 +1,7 @@
 /* VD Color:    #225D38 */
 /* VD Font      Roboto Slab // Bold */
 
-/* Bold 700
-font-family: 'Roboto Slab', serif; */
-/* Medium 500
-font-family: 'Roboto Slab', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap');
 *
 {
     margin: 0;
@@ -15,11 +11,18 @@ font-family: 'Roboto Slab', serif; */
 }
 body
 {
-    background: #12222d;
+    background: #7c9485;
+    height: 1000px;
 }
 .wrapper
 {
     position: relative;
+    transition: 0.5s;
+    left: 0;
+}
+.wrapper.active
+{
+    left: -400px;
 }
 header
 {
@@ -32,6 +35,12 @@ header
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    transition: 0.5s;
+}
+header.sticky
+{
+    padding: 20px 100px;
+    background: #7c9485;
 }
 header .logo
 {
@@ -51,6 +60,11 @@ header .toggle
     background-size: cover;
     cursor: pointer;
 }
+header .toggle.active
+{
+    background: url(../IMG/close.png);
+    background-size: cover;
+}
 .banner
 {
     position: relative;
@@ -59,7 +73,7 @@ header .toggle
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #225D38;
+    background: #b6e4c7;
 }
 .banner img
 {
@@ -69,7 +83,7 @@ header .toggle
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.25;
+    opacity: 0.50;
 }
 .banner .content
 {
@@ -79,11 +93,51 @@ header .toggle
 }
 .banner .content h2
 {
-    font-size: 60px;
-    color: #fff;
+    font-size: 48px;
+    color: #225D38;
 }
 .banner .content p
 {
-    font-size: 18px;
-    color: #fff;
+    font-size: 23px;
+    color: #225D38;
+}
+.sidebar
+{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: #7c9485;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+}
+.sidebar.active
+{
+    right: 0;
+}
+.sidebar ul
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar ul li
+{
+    list-style: none;
+    margin: 5px 0;
+}
+.sidebar ul li a
+{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.sidebar ul li a:hover
+{
+    color: #225D38;
 }
