@@ -94,12 +94,14 @@ header .toggle.active
 }
 .banner .content h2
 {
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 55px;
     color: #225D38;
 }
 .banner .content p
 {
-    font-size: 23px;
+    font-weight: 500;
+    font-size: 25px;
     color: #225D38;
 }
 .sidebar
@@ -133,7 +135,7 @@ header .toggle.active
 }
 .sidebar ul li a
 {
-    color: #FFF;
+    color: #fff;
     font-size: 30px;
     font-weight: 300;
     text-decoration: none;
@@ -158,8 +160,8 @@ header .toggle.active
 .about .contentBx .heading
 {
     position: relative;
-    color: #fff;
-    font-size: 30px;
+    color: #225D38;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -167,8 +169,8 @@ header .toggle.active
 .about .contentBx .text 
 {
     position: relative;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
+    color: #225D38;
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 1px;
 }
