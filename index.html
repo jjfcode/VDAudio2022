@@ -10,25 +10,46 @@
 </head>
 <body>
     <div class="wrapper">
+
+        <!-- header -->
         <header>
             <a href="/"><img src="img/logo1-smal.png" alt=""></a>
             <div class="toggle" onclick="toggleClassName();"></div>
         </header>
+
+        <!-- Sidebar -->
         <div class="sidebar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Our Gear</a></li>
+                <li><a href="#home" onclick="toggleClassName();">Home</a></li>
+                <li><a href="#about" onclick="toggleClassName();">About</a></li>
+                <li><a href="#" onclick="toggleClassName();">Contact</a></li>
+                <li><a href="#" onclick="toggleClassName();">Our Gear</a></li>
             </ul>
         </div>
-        <div class="banner">
+
+        <!-- banner -->
+        <div class="banner" id="home">
             <img src="IMG/main_img.png">
             <div class="content">
                 <h2>your pro audio rental source</h2>
                 <p>we equip you with audio solutions for event production</p>
             </div>
         </div>
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="contentBx">
+                <h2 class="heading">About</h2>
+                <p class="text"><strong>VD Audio Rental</strong> was founded in 2009. Our vision began with the desire to become a trusted resource
+                    for live production and concert touring companies. We have since provided support for a variety of
+                    production events locally and abroad. With years of experience under our belt, we strive to be the first
+                    source for audio rental solutions. It is our priority to build relationships with our clients. Along with
+                    having a large inventory of professional audio gear available, we are proud to have a dedicated team
+                    with real-world knowledge in live production. This enables us to provide personal support for quick
+                    solutions. <strong>VD Audio Rental</strong> continues to evolve and expand to benefit our client's needs.</p>
+            </div>
+            <div class="imgBx"></div>
+        </section>
     </div>
     <script type="text/javascript">
         function toggleClassName(){
