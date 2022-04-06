@@ -200,8 +200,8 @@ header .toggle.active
     display: inline-block;
     margin: 0 10px;
 }
-.footer ul li a img
+.footer ul li a i
 {
     max-width: 20px;
-    filter: invert(1);
+    color: #fff;
 }
